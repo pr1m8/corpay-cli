@@ -1,0 +1,151 @@
+# -------------------------------
+# OOAI Framework Data
+# -------------------------------
+.ooai/
+!.ooai/.gitkeep
+
+# -------------------------------
+# Python cache / build artifacts
+# -------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Compiled extensions
+*.so
+*.dll
+*.dylib
+
+# Bytecode cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.dmypy.json
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+*.py,cover
+*.log
+*.tmp
+*.mo
+
+# Testing
+.tox/
+.nox/
+.hypothesis/
+tests/.archive/
+tests/__snapshots__/
+tests/golden/references/
+*.ambr
+
+# -------------------------------
+# Virtual environments
+# -------------------------------
+.venv/
+venv/
+env/
+.pdm-python
+
+# -------------------------------
+# PDM / uv
+# -------------------------------
+# PDM lockfiles are kept!  (pdm.lock should be versioned)
+# PDM environment marker
+.pdm.toml
+# uv cache (platform dependent, safe to ignore)
+.uv-cache/
+.uv/
+
+# -------------------------------
+# Jupyter / IPython
+# -------------------------------
+.ipynb_checkpoints/
+*.ipynb_convert/
+.profile_default/
+.ipython/
+*.nbconvert.ipynb
+# Ignore all notebook files (they have issues with pre-commit)
+*.ipynb
+notebooks/*.ipynb
+test.ipynb
+
+# -------------------------------
+# Editors / IDEs
+# -------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# Build / packaging
+# -------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+wheels/
+*.whl
+.pdm-build/
+
+# -------------------------------
+# Trunk.io
+# -------------------------------
+.trunk/actions/
+.trunk/logs/
+.trunk/notifications/
+.trunk/out/
+.trunk/plugins/
+.trunk/tools/
+
+# -------------------------------
+# Logs / misc
+# -------------------------------
+*.log
+*.out
+*.err
+*.bak
+*.swp
+*.swo
+*.orig
+
+
+
+# -----------------------------
+# Docker / Compose
+# -----------------------------
+
+# Local build context caches
+**/.dockerignore
+**/.docker-cache/
+**/.docker/
+**/.docker_build/
+
+# Docker Compose override files
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+
+# Container logs
+*.log
+docker/logs/
+docker/*.log
+
+# Runtime volumes / mounts
+docker/data/
+docker/db/
+docker/tmp/
+docker/cache/
+
+# Ignore generated images/tars
+*.tar
+*.img
+*.squashfs
